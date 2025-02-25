@@ -144,7 +144,7 @@ NOCYCLE;
 
 
 INSERT INTO ASIGURARE (id_asigurare, nume_companie, nr_polita)
-VALUES (index_seq.nextval, 'Medlife', '1234');
+VALUES (index_seq.nextval, 'BiosClinic', '1234');
 INSERT INTO ASIGURARE (id_asigurare, nume_companie, nr_polita)
 VALUES (index_seq.nextval, 'Allinz', '6789');
 INSERT INTO ASIGURARE (id_asigurare, nume_companie, nr_polita)
@@ -158,7 +158,7 @@ select * from asigurare;
 
 
 INSERT INTO ISTORIC (id_istoric, nume_diagnostic)
-VALUES (index_seq.nextval, 'Bronsita acuta');
+VALUES (index_seq.nextval, 'Bronsita');
 INSERT INTO ISTORIC (id_istoric, nume_diagnostic)
 VALUES (index_seq.nextval, 'Diabet zaharat');
 INSERT INTO ISTORIC (id_istoric, nume_diagnostic)
@@ -177,9 +177,9 @@ VALUES (index_seq.nextval, 'Carina', 'Popov', '987654321', 3, TO_DATE('1985-12-0
 INSERT INTO PACIENTI (id_pacient, nume, prenume, telefon, id_asigurare, data_nastere, adresa, id_istoric)
 VALUES (index_seq.nextval, 'Ioan', 'Popescu', '567891234', 4,TO_DATE('1978-08-20', 'YYYY-MM-DD'), 'strada aurel vlaicu 16', 10);
 INSERT INTO PACIENTI (id_pacient, nume, prenume, telefon, id_asigurare, data_nastere, adresa, id_istoric)
-VALUES (index_seq.nextval, 'Patrick', 'Ionescu', '432198765', 5, TO_DATE('1992-03-18', 'YYYY-MM-DD'), 'soseaua pipera 21', 11);
+VALUES (index_seq.nextval, 'Patrick', 'Enache', '432198765', 5, TO_DATE('1992-03-18', 'YYYY-MM-DD'), 'soseaua pipera 21', 11);
 INSERT INTO PACIENTI (id_pacient, nume, prenume, telefon, id_asigurare, data_nastere, adresa, id_istoric)
-VALUES (index_seq.nextval, 'Arina', 'Pelmus', '987654321', 6, TO_DATE('1980-07-05', 'YYYY-MM-DD'), 'primaverii 35', 12);
+VALUES (index_seq.nextval, 'Alina', 'Cuc', '987654321', 6, TO_DATE('1980-07-05', 'YYYY-MM-DD'), 'primaverii 35', 12);
 
 select * from pacienti;
 
@@ -192,27 +192,27 @@ VALUES (index_seq.nextval, 'Elena', 'Pirip', 3000);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
 VALUES (index_seq.nextval, 'Carina', 'Ionescu', 3500);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Elias', 'radulescu', 4000);
+VALUES (index_seq.nextval, 'Eric', 'Pop', 4000);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
 VALUES (index_seq.nextval, 'Ion', 'Popescu', 2000);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Marc', 'Seb', 2500);
+VALUES (index_seq.nextval, 'Marc', 'Voda', 2500);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Karina', 'Arnautu', 3000);
+VALUES (index_seq.nextval, 'Karina', 'Plesu', 3000);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Radu', 'Serban', 3500);
+VALUES (index_seq.nextval, 'Radu', 'Chirita', 3500);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'David', 'Militaru', 4000);
+VALUES (index_seq.nextval, 'David', 'Tencu', 4000);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Sergiu', 'Craciun', 2000);
+VALUES (index_seq.nextval, 'Bogdan', 'Felix', 2000);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Alex', 'Jon', 2500);
+VALUES (index_seq.nextval, 'Alex', 'Apetre', 2500);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Marius', 'Ilie', 3000);
+VALUES (index_seq.nextval, 'Marius', 'Ion', 3000);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Ana', 'Cornea', 3500);
+VALUES (index_seq.nextval, 'Cristina', 'Petru', 3500);
 INSERT INTO ANGAJATI (id_angajat, prenume, nume, salariu)
-VALUES (index_seq.nextval, 'Petru', 'Munteanu', 4000);
+VALUES (index_seq.nextval, 'Albert', 'Munteanu', 4000);
 
 select * from angajati;
 
@@ -286,7 +286,7 @@ VALUES (index_seq.nextval, 'Consult cardiolog', 36);
 INSERT INTO SERVICII_MEDICALE (id_serviciu_medical, tip_serviciu, id_plata)
 VALUES (index_seq.nextval, 'Consult dermatologie', 37);
 INSERT INTO SERVICII_MEDICALE (id_serviciu_medical, tip_serviciu, id_plata)
-VALUES (index_seq.nextval, 'Consult ginecologie', 38);
+VALUES (index_seq.nextval, 'Consult ortoped', 38);
 INSERT INTO SERVICII_MEDICALE (id_serviciu_medical, tip_serviciu, id_plata)
 VALUES (index_seq.nextval, 'Control rutina', 39);
 INSERT INTO SERVICII_MEDICALE (id_serviciu_medical, tip_serviciu, id_plata)
@@ -342,7 +342,7 @@ VALUES (index_seq.nextval, 'Calea floreasca 37', 54);
 INSERT INTO FARMACIE (id_farmacie, locatie, id_prescriptie)
 VALUES (index_seq.nextval, 'Bd-ul aviatorilor 2', 55);
 INSERT INTO FARMACIE (id_farmacie, locatie, id_prescriptie)
-VALUES (index_seq.nextval, 'Baneasa 29', 56);
+VALUES (index_seq.nextval, 'Strada Roma 29', 56);
 INSERT INTO FARMACIE (id_farmacie, locatie, id_prescriptie)
 VALUES (index_seq.nextval, 'Bd-ul Iuliu Maniu 4', 57);
 INSERT INTO FARMACIE (id_farmacie, locatie, id_prescriptie)
@@ -358,7 +358,7 @@ VALUES (index_seq.nextval, 'Eferalgan', TO_DATE('2025-05-15', 'YYYY-MM-DD'), 50,
 INSERT INTO MEDICAMENTE (id_medicament, denumire, data_expirare, stoc)
 VALUES (index_seq.nextval, 'Paracetamol', TO_DATE('2027-08-10', 'YYYY-MM-DD'), 75,66);
 INSERT INTO MEDICAMENTE (id_medicament, denumire, data_expirare, stoc)
-VALUES (index_seq.nextval, 'Melatonina', TO_DATE('2023-10-20', 'YYYY-MM-DD'), 80,66);
+VALUES (index_seq.nextval, 'Nurofen', TO_DATE('2023-10-20', 'YYYY-MM-DD'), 80,66);
 INSERT INTO MEDICAMENTE (id_medicament, denumire, data_expirare, stoc)
 VALUES (index_seq.nextval, 'Vitamina C', TO_DATE('2026-11-30', 'YYYY-MM-DD'), 60,66);
 
