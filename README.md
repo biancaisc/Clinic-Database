@@ -17,4 +17,4 @@ This is a relational database using Oracle Database DBMS.
 ![final_conceptual_diagram](https://github.com/user-attachments/assets/75eb2ab8-556e-4dfd-b361-5786b1ed0cd4)
 
 ## Operations on the database
-[Here](ClinicDB_exercises.sql) you can find various operations involving different types of collections, cursors, exceptions, and triggers.
+[Here](ClinicDB_exercises.sql) you can find various operations on the database, involving different types of collections, cursors, exceptions, and triggers.
