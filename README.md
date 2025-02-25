@@ -11,4 +11,11 @@ This is a relational database using Oracle Database DBMS.
 - The clinic has a pharmacy that can store and manage prescriptions issued to patients. The pharmacy can generate reports on available stocks and manage the expiry date of medicines.
 
 ## Entity-Relationship Diagram (ERD)
+![diag_ERD](https://github.com/user-attachments/assets/fe38993f-7ed5-439b-b59f-562691863b56)
+
+## Conceptual Diagram
+![final_conceptual_diagram](https://github.com/user-attachments/assets/75eb2ab8-556e-4dfd-b361-5786b1ed0cd4)
+
+## Operations on the database
+
 
